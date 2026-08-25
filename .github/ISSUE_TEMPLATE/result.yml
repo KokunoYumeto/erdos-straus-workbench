@@ -1,0 +1,48 @@
+name: Bounded result or computation
+description: Submit a checkable lemma, calculation, obstruction, counterexample, or failed approach.
+title: "[Result] "
+labels: [claimed-unverified]
+body:
+  - type: textarea
+    id: statement
+    attributes:
+      label: Exact statement
+      description: Include all domains, hypotheses, quantifiers, exceptional loci, and nonclaims.
+    validations:
+      required: true
+  - type: textarea
+    id: maps
+    attributes:
+      label: Objects and maps
+      description: Give coordinates, domains, codomains, inverses, kernels, fibres, symmetries, and information loss where applicable.
+    validations:
+      required: true
+  - type: textarea
+    id: proof
+    attributes:
+      label: Proof or certificate
+      description: Provide a complete argument and exact reproducibility commands or artifact hashes.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Literature and corpus crosswalk
+      description: Cite exact sources and locators; distinguish antecedents from your independent result.
+    validations:
+      required: true
+  - type: textarea
+    id: nonclaims
+    attributes:
+      label: Nonclaims and open obligations
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundary
+    attributes:
+      label: Publication boundary
+      options:
+        - label: I understand this remains CLAIMED_UNVERIFIED until independent review.
+          required: true
+        - label: I have not uploaded private transcripts, correspondence, credentials, or unlicensed bulk source.
+          required: true

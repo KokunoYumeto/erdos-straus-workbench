@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "upstream_repository": "https://github.com/KokunoYumeto/mathematics-commons-pilot",
+  "upstream_commit": "6c0c7bbd368cb554d4d9ab9133881a5d4bf56a75",
+  "contract_version": "0.1.0",
+  "copied_components": [
+    {"path": "schemas/evidence-record.schema.json", "bytes": 15586, "sha256": "672acea0478473a5983c955cac7b70a1928e44fdd83e277f8faf0cf87b7b18ae"},
+    {"path": "schemas/packet-transition.schema.json", "bytes": 10082, "sha256": "6be4c9cc4fca0729ccfd027f3d62eeebfcf389abed7d0ac352f798956066b50f"},
+    {"path": "schemas/problem-record.schema.json", "bytes": 17369, "sha256": "718c8b2318a6b02e2390e3274bf53f3fce80c8136f7f8a80e4a9def347424693"},
+    {"path": "schemas/research-packet.schema.json", "bytes": 26730, "sha256": "e0491ee8dc1f657adf22a956228f3cbecd77a0d9416814bb5712f652001cef66"},
+    {"path": "schemas/review-record.schema.json", "bytes": 18294, "sha256": "22402504dcd31f29800f573f48653eb21a6edd529fab151a7e0a020efc4b47fd"},
+    {"path": "schemas/run-record.schema.json", "bytes": 18851, "sha256": "c932e5841df23fca619431f604d0fa99ea7ebb35513cbe2fcce730b26e7e5aab"},
+    {"path": "schemas/source-record.schema.json", "bytes": 15265, "sha256": "f307912fd70ea6ac130c53263374f2e23e1b1e90387cabfc19c352dc712f2499"},
+    {"path": "tools/validate_packets.py", "bytes": 209399, "sha256": "271448527d52aadb52b1b0409a56c887cd2feadd72bbb3d80bd5bf2d4bdc019e"}
+  ],
+  "central_status": "dedicated_candidate_workbench_not_yet_commons_accepted",
+  "nonclaim": "Vendoring the Commons contracts does not admit or accept this workbench or any mathematical result."
+}

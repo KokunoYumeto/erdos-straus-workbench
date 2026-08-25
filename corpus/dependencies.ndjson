@@ -1,0 +1,3 @@
+{"dependency_id":"MC-ES-DEP-R107-AP-ON-LOGS","from":"MC-ES-CLAIM-R107-DEFICIT-AP","to":"MC-ES-CLAIM-R107-LOGS","kind":"coordinate_input"}
+{"dependency_id":"MC-ES-DEP-R107-DIFF-ON-AP","from":"MC-ES-CLAIM-R107-DIFFSET","to":"MC-ES-CLAIM-R107-DEFICIT-AP","kind":"set_identity"}
+{"dependency_id":"MC-ES-DEP-R107-SAT-ON-DIFF","from":"MC-ES-CLAIM-R107-QNR-SATURATION","to":"MC-ES-CLAIM-R107-DIFFSET","kind":"translate_disjointness"}

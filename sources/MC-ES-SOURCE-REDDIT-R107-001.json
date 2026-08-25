@@ -1,0 +1,117 @@
+{
+  "record_type": "source_record",
+  "schema_version": "0.1.0",
+  "record_version": "1.0.0",
+  "source_id": "MC-ES-SOURCE-REDDIT-R107-001",
+  "status": "metadata_only",
+  "source_kind": "other",
+  "title": "Question about the mod-107 Erdős–Straus shell",
+  "citation": "Reddit user u/CommonCareful3149, Question about the mod-107 Erdős–Straus shell, r/LLMmathematics, public post, accessed 2026-08-25.",
+  "languages": ["en"],
+  "authority_status": "unverified_lead",
+  "verification_status": "content_checked",
+  "created_at": "2026-08-25T21:40:00Z",
+  "updated_at": "2026-08-25T21:40:00Z",
+  "locator": {
+    "reference_kind": "external_reference",
+    "canonical_reference": "https://www.reddit.com/r/LLMmathematics/comments/1vy127z/",
+    "access_uri": "https://www.reddit.com/r/LLMmathematics/comments/1vy127z/",
+    "accessed_at": "2026-08-25T21:40:00Z",
+    "version_label": "public page observed 2026-08-25"
+  },
+  "integrity": {
+    "hashed_object_description": "Exact UTF-8 bytes of the Commons-created metadata-only locator sources/reddit-r107-public-lead-metadata.md, not a copy of the Reddit post",
+    "byte_size": 830,
+    "hashes": [{"algorithm": "sha256", "digest": "0b3c5c9c232bc21566238c7e9d41147a63b142029279105fcf775878073661ce"}]
+  },
+  "provenance": [{
+    "entry_id": "MC-ES-PROV-REDDIT-R107-001",
+    "kind": "source_lead",
+    "description": "The public post announces a short mod-107 technical note, builds on the Clankers archive, expressly avoids a priority claim, and asks where to send the note. The post does not contain the note or the detailed proof.",
+    "originator_label": "Reddit user u/CommonCareful3149",
+    "originator_public_id": "u.CommonCareful3149",
+    "attribution_status": "verified",
+    "publication_basis": "public_source",
+    "recorded_at": "2026-08-25T21:40:00Z"
+  }],
+  "rights_assessment": {
+    "rights_status": "rights_reserved",
+    "basis": "The public post remains third-party expression; this repository redistributes only newly written metadata and an independent mathematical reconstruction.",
+    "license_identifier": "No reuse license relied upon",
+    "jurisdictions_assessed": ["Metadata-only publication screen; no specialist legal review"],
+    "permissions": {
+      "copying": "permitted",
+      "extraction": "permitted",
+      "translation": "unknown",
+      "redistribution": "unknown",
+      "model_training": "unknown"
+    },
+    "redistribution_status": "metadata_only",
+    "attribution_requirements": ["Credit the public handle for the community lead.", "Do not imply a priority claim."],
+    "access_requirements": ["Follow the external public URL to inspect the source."],
+    "review_status": "reviewed",
+    "reviewed_at": "2026-08-25T21:45:00Z",
+    "reviewer_id": "MC-ES-STEWARD-001",
+    "limitations": {"status": "known", "items": ["The unpublished note is not available in this repository.", "The public post is a lead, not an independently reviewed proof."]}
+  },
+  "third_party_components": [{
+    "component_id": "MC-ES-COMPONENT-REDDIT-R107-001",
+    "component_kind": "original_work",
+    "description": "The external Reddit post and any unpublished technical note it mentions.",
+    "rightsholder_or_source": "u/CommonCareful3149 and the Reddit platform as applicable",
+    "rights_status": "rights_reserved",
+    "license_identifier": "No reuse license relied upon",
+    "permissions": {
+      "copying": "unknown",
+      "extraction": "conditional",
+      "translation": "unknown",
+      "redistribution": "unknown",
+      "model_training": "unknown"
+    },
+    "redistribution_status": "metadata_only"
+  }, {
+    "component_id": "MC-ES-COMPONENT-REDDIT-R107-METADATA-001",
+    "component_kind": "annotation",
+    "description": "The newly written factual locator and bounded paraphrase in sources/reddit-r107-public-lead-metadata.md.",
+    "rightsholder_or_source": "Mathematics Commons contributors",
+    "rights_status": "public_domain",
+    "license_identifier": "CC0-1.0",
+    "permissions": {
+      "copying": "permitted",
+      "extraction": "permitted",
+      "translation": "permitted",
+      "redistribution": "permitted",
+      "model_training": "permitted"
+    },
+    "redistribution_status": "permitted"
+  }],
+  "submission_boundary": {
+    "private_by_default": true,
+    "schema_fields_are_public_allowlist": true,
+    "allowlisted_artifact_ids": ["MC-ES-ARTIFACT-REDDIT-R107-METADATA-001"],
+    "excluded_from_submission_by_default": {
+      "raw_transcript": true,
+      "prompt_history": true,
+      "chain_of_thought": true,
+      "private_notes": true,
+      "unpublished_communications": true,
+      "personal_context": true,
+      "credentials": true,
+      "unrelated_local_files": true
+    },
+    "raw_interaction_records_required": false,
+    "redaction_status": "passed",
+    "publication_preview_status": "approved",
+    "retention_rule": "metadata_only"
+  },
+  "submission_rights": {
+    "commons_originated_record": true,
+    "dedication": "CC0-1.0",
+    "dedication_scope": "intentionally_submitted_commons_metadata_and_components_only",
+    "submitted_component_ids": ["MC-ES-SOURCE-REDDIT-R107-001", "MC-ES-ARTIFACT-REDDIT-R107-METADATA-001"],
+    "third_party_rights_preserved": true,
+    "described_source_content_dedicated_under_cc0": false,
+    "redistribution_status": "metadata_only"
+  },
+  "limitations": {"status": "known", "items": ["Only the public locator and a short factual paraphrase are retained.", "No novelty or priority determination follows from this record."]}
+}

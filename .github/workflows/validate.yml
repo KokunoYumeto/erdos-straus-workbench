@@ -1,0 +1,57 @@
+name: validate-workbench
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  records-and-python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: "3.12"
+      - name: Validate preserved Commons schemas
+        run: python tools/validate_packets.py --schema-only
+      - name: Validate the live packet graph and history
+        run: python tools/validate_packets.py --require-live --repository-aware
+      - name: Replay public-surface and finite certificates
+        run: python tools/verify_public_surface.py
+
+  lean:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: formal/lean
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: leanprover/lean-action@38fbc41a8c28c4cbaec22d7f7de508ec2e7c0dd9 # v1.5.0
+        with:
+          auto-config: false
+          build: true
+          use-mathlib-cache: true
+          lake-package-directory: formal/lean
+          leanchecker: true
+      - name: Direct module replay and exact axiom audit
+        run: python ../../tools/verify_lean_audit.py
+
+  latex:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: xu-cheng/latex-action@6549dc21effb2730855a1281407ecfcececc6c1b # v4
+        with:
+          docker_image: ghcr.io/xu-cheng/texlive-alpine@sha256:11383430b9a3e48c0b79339f34d8092f942f897d91ab3749d4899d06731fea7f
+          root_file: r107_deficit_progression.tex
+          working_directory: work/MC-ES-PACKET-R107-001
+          compiler: latexmk
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode

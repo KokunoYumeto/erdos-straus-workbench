@@ -1,0 +1,117 @@
+{
+  "record_type": "source_record",
+  "schema_version": "0.1.0",
+  "record_version": "1.0.0",
+  "source_id": "MC-ES-SOURCE-ZENODO-21845035",
+  "status": "metadata_only",
+  "source_kind": "database_record",
+  "title": "Erdős–Straus Project Archive: Residual Divisor Shells, Quotient Surpluses, and Finite Verification",
+  "citation": "The Clankers, Erdős–Straus Project Archive: Residual Divisor Shells, Quotient Surpluses, and Finite Verification, version 2026.08.08.1, Zenodo, DOI 10.5281/zenodo.21845035.",
+  "languages": ["en"],
+  "authority_status": "repository_metadata",
+  "verification_status": "content_checked",
+  "created_at": "2026-08-25T21:50:00Z",
+  "updated_at": "2026-08-25T21:50:00Z",
+  "locator": {
+    "reference_kind": "external_reference",
+    "canonical_reference": "https://doi.org/10.5281/zenodo.21845035",
+    "access_uri": "https://zenodo.org/records/21845035",
+    "archive_uri": "https://doi.org/10.5281/zenodo.21845035",
+    "accessed_at": "2026-08-25T21:50:00Z",
+    "version_label": "2026.08.08.1"
+  },
+  "integrity": {
+    "hashed_object_description": "Exact UTF-8 bytes of the Commons-created metadata-only locator sources/zenodo-21845035-metadata.md, not the deposited archive files",
+    "byte_size": 753,
+    "hashes": [{"algorithm": "sha256", "digest": "f9dbc443122f45f95a275c4f07860d036c00c398530a16f0c190a54e73095735"}]
+  },
+  "provenance": [{
+    "entry_id": "MC-ES-PROV-ZENODO-21845035",
+    "kind": "source_file",
+    "description": "Zenodo identifies the immutable versioned project archive, its creator, version, DOI, file list, and a 488-page principal reader. The workbench uses it as a read-only historical baseline.",
+    "originator_label": "The Clankers; Zenodo repository metadata",
+    "attribution_status": "verified",
+    "publication_basis": "metadata_only",
+    "recorded_at": "2026-08-25T21:50:00Z"
+  }],
+  "rights_assessment": {
+    "rights_status": "unknown",
+    "basis": "At access time the Zenodo page displayed a License heading without a license value. Public availability is not treated as redistribution permission.",
+    "license_identifier": "No displayed license value; unresolved",
+    "jurisdictions_assessed": ["Metadata-only publication screen; no specialist legal review"],
+    "permissions": {
+      "copying": "permitted",
+      "extraction": "permitted",
+      "translation": "unknown",
+      "redistribution": "unknown",
+      "model_training": "unknown"
+    },
+    "redistribution_status": "metadata_only",
+    "attribution_requirements": ["Preserve the creator, title, version, and DOI."],
+    "access_requirements": ["Use the DOI or Zenodo record to inspect deposited files."],
+    "review_status": "reviewed",
+    "reviewed_at": "2026-08-25T21:55:00Z",
+    "reviewer_id": "MC-ES-STEWARD-001",
+    "limitations": {"status": "known", "items": ["This rights assessment does not establish permission to redistribute deposited files.", "The archive contains inherited claims requiring separate mathematical audit."]}
+  },
+  "third_party_components": [{
+    "component_id": "MC-ES-COMPONENT-ZENODO-21845035",
+    "component_kind": "original_work",
+    "description": "The external Zenodo record and all deposited project files.",
+    "rightsholder_or_source": "The Clankers and third-party contributors or sources as applicable",
+    "rights_status": "unknown",
+    "license_identifier": "No displayed license value; unresolved",
+    "permissions": {
+      "copying": "unknown",
+      "extraction": "unknown",
+      "translation": "unknown",
+      "redistribution": "unknown",
+      "model_training": "unknown"
+    },
+    "redistribution_status": "metadata_only"
+  }, {
+    "component_id": "MC-ES-COMPONENT-ZENODO-METADATA-001",
+    "component_kind": "annotation",
+    "description": "The newly written factual locator in sources/zenodo-21845035-metadata.md.",
+    "rightsholder_or_source": "Mathematics Commons contributors",
+    "rights_status": "public_domain",
+    "license_identifier": "CC0-1.0",
+    "permissions": {
+      "copying": "permitted",
+      "extraction": "permitted",
+      "translation": "permitted",
+      "redistribution": "permitted",
+      "model_training": "permitted"
+    },
+    "redistribution_status": "permitted"
+  }],
+  "submission_boundary": {
+    "private_by_default": true,
+    "schema_fields_are_public_allowlist": true,
+    "allowlisted_artifact_ids": ["MC-ES-ARTIFACT-ZENODO-METADATA-001"],
+    "excluded_from_submission_by_default": {
+      "raw_transcript": true,
+      "prompt_history": true,
+      "chain_of_thought": true,
+      "private_notes": true,
+      "unpublished_communications": true,
+      "personal_context": true,
+      "credentials": true,
+      "unrelated_local_files": true
+    },
+    "raw_interaction_records_required": false,
+    "redaction_status": "passed",
+    "publication_preview_status": "approved",
+    "retention_rule": "metadata_only"
+  },
+  "submission_rights": {
+    "commons_originated_record": true,
+    "dedication": "CC0-1.0",
+    "dedication_scope": "intentionally_submitted_commons_metadata_and_components_only",
+    "submitted_component_ids": ["MC-ES-SOURCE-ZENODO-21845035", "MC-ES-ARTIFACT-ZENODO-METADATA-001"],
+    "third_party_rights_preserved": true,
+    "described_source_content_dedicated_under_cc0": false,
+    "redistribution_status": "metadata_only"
+  },
+  "limitations": {"status": "known", "items": ["The deposited bytes are not included in this repository.", "Repository metadata and project self-description are not independent mathematical review."]}
+}

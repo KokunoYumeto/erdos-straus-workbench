@@ -1,0 +1,49 @@
+name: Independent review
+description: Review exact artifact versions in one declared lane.
+title: "[Review] "
+labels: [independent-review]
+body:
+  - type: input
+    id: commit
+    attributes:
+      label: Reviewed commit
+      description: Full 40-character Git commit.
+    validations:
+      required: true
+  - type: dropdown
+    id: lane
+    attributes:
+      label: Review lane
+      options:
+        - Mathematical reconstruction
+        - Computational reproduction
+        - Formal acceptance
+        - Formal statement correspondence
+        - Literature/open-status
+        - Attribution
+        - Rights/privacy
+    validations:
+      required: true
+  - type: textarea
+    id: checked
+    attributes:
+      label: What was checked
+      description: Name exact files, hashes, commands, statements, and source locators.
+    validations:
+      required: true
+  - type: textarea
+    id: notchecked
+    attributes:
+      label: What was not checked
+    validations:
+      required: true
+  - type: dropdown
+    id: disposition
+    attributes:
+      label: Disposition
+      options:
+        - Changes requested
+        - Verified in this lane
+        - Unable to verify
+    validations:
+      required: true

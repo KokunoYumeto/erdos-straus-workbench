@@ -1,0 +1,13 @@
+.lake/
+build/
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.toc
+__pycache__/
+*.pyc
+tmp/
+.DS_Store
+Thumbs.db

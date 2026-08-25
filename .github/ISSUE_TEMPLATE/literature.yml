@@ -1,0 +1,44 @@
+name: Literature or status lead
+description: Add an exact Erdős–Straus source, locator, or correction for audit.
+title: "[Literature] "
+labels: [literature-lead]
+body:
+  - type: input
+    id: citation
+    attributes:
+      label: Exact citation
+      description: Include author, title, version/edition, date, and stable identifier.
+    validations:
+      required: true
+  - type: input
+    id: locator
+    attributes:
+      label: Public locator
+      description: DOI, arXiv identifier, repository record, or other stable public URL.
+    validations:
+      required: true
+  - type: textarea
+    id: relevance
+    attributes:
+      label: Exact Erdős–Straus edge
+      description: State the theorem, definition, correction, status evidence, or dependency and give page/equation/theorem locators.
+    validations:
+      required: true
+  - type: dropdown
+    id: access
+    attributes:
+      label: Rights/access status
+      options:
+        - Metadata only / rights unresolved
+        - Open license identified
+        - Public domain
+        - Permission obtained
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundary
+    attributes:
+      label: Publication boundary
+      options:
+        - label: I have not pasted copyrighted bulk text or private material.
+          required: true

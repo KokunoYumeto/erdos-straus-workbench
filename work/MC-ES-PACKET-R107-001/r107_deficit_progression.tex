@@ -1,0 +1,216 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+\DeclareMathOperator{\QR}{QR}
+\DeclareMathOperator{\QNR}{QNR}
+
+\title{A ten-point deficit progression in the mod-107\\
+signed-divisor support}
+\author{Erd\H{o}s--Straus Workbench\\
+community lead credited to \texttt{u/CommonCareful3149}}
+\date{25 August 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+For the record integer $p=8{,}803{,}369$ and residual shell $R=107$, the
+even-factor half-log support has a ten-point complement in
+$\mathbb Z/53\mathbb Z$.  We verify that this complement is the arithmetic
+progression $D=\{23+42j:0\leq j\leq9\}$ and that $|D-D|=19$.  Since the gap
+between the two odd-sheet translates is not in $D-D$, the translates saturate
+the full quadratic-nonresidue coset modulo $107$.  This is one bounded support
+calculation, not a general shell theorem, an endpoint proof, or a priority
+claim.
+\end{abstract}
+
+\section{Provenance and scope}
+
+A public post by Reddit user
+\href{https://www.reddit.com/r/LLMmathematics/comments/1vy127z/}
+{u/CommonCareful3149} reports an investigation of the mod-$107$
+Erd\H{o}s--Straus shell and announces a short technical note.  This workbench
+credits the progression and difference-set observation to that community lead and
+reconstructs it independently below.  The unpublished note and private
+correspondence are not reproduced.
+
+The exact progression language was not found in the routed local project
+corpus; the factor logarithms, parity sheets, target fibres, and missing
+exponent classes were already present there.  This local search result does
+not establish global novelty.  The immutable historical baseline is
+\href{https://zenodo.org/records/21845035}{Erd\H{o}s--Straus Project Archive,
+Zenodo record 21845035}.
+
+\section{Coordinates}
+
+Set
+\[
+p=8{,}803{,}369,
+\qquad R=107,
+\qquad a=\frac{p+R}{4}=2{,}200{,}869=3^2 11^2 43\,47.
+\]
+The element $2$ has order $106$ modulo $107$.  Hence
+\[
+\lambda:(\mathbb F_{107}^{\times},\cdot)\longrightarrow
+ C_{106}:=\mathbb Z/106\mathbb Z,
+\qquad \lambda(u)=\log_2(u),
+\]
+is an isomorphism, with inverse $e\mapsto2^e$.  Direct computation gives
+\begin{equation}
+ \lambda(3)=70,\qquad \lambda(11)=22,\qquad
+ \lambda(43)=59,\qquad \lambda(47)=66.
+ \label{eq:logs}
+\end{equation}
+Thus $43$ is the unique factor with odd logarithm.
+
+The quadratic residues correspond under $\lambda$ to the even subgroup
+$2C_{106}$.  Define the exact half-log isomorphism
+\[
+h:2C_{106}\longrightarrow C_{53}:=\mathbb Z/53\mathbb Z,
+\qquad h(2x)=x,
+\]
+with inverse $x\mapsto2x$.  Removing the factor $43$, the centered
+even-factor support maps to
+\begin{equation}
+A=\{35r+11s+33t:-2\leq r,s\leq2,\ -1\leq t\leq1\}
+\subseteq C_{53}.
+\label{eq:A}
+\end{equation}
+The map $h$ has trivial kernel and singleton fibres; this change of coordinate
+loses no information.
+
+\section{The deficit and its difference set}
+
+\begin{theorem}
+The set $A$ has $43$ elements.  Its complement is
+\begin{align}
+D:=C_{53}\setminus A
+ &=\{1,10,12,21,23,30,32,41,43,52\}\notag\\
+ &=\{23+42j\pmod{53}:0\leq j\leq9\}.
+\label{eq:D}
+\end{align}
+Moreover,
+\begin{equation}
+D-D=\{42k\pmod{53}:-9\leq k\leq9\},
+\qquad |D-D|=19=2|D|-1.
+\label{eq:DD}
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Exact reduction of the $5\cdot5\cdot3=75$ triples in \eqref{eq:A} gives
+$|A|=43$ and the first list in \eqref{eq:D}.  Starting at $23$ and repeatedly
+adding $42$ gives
+\[
+23,12,1,43,32,21,10,52,41,30,
+\]
+which proves the progression identity.
+
+Every difference is $42(j-i)$ with $-9\leq j-i\leq9$, and each integer in
+that interval occurs.  Because $42$ is invertible modulo $53$, a collision
+would imply $53\mid(k-\ell)$.  But $|k-\ell|\leq18<53$, so $k=\ell$.
+Therefore all $19$ displayed differences are distinct.
+\end{proof}
+
+\section{Saturation of the nonresidue sheet}
+
+The odd exponent coset is a torsor, not a subgroup.  We therefore use the
+affine bijection
+\[
+\psi:1+2C_{106}\longrightarrow C_{53},
+\qquad \psi(2x+1)=x,
+\qquad \psi^{-1}(x)=2x+1.
+\]
+Since
+\[
+59=2\cdot29+1,
+\qquad -59\equiv47=2\cdot23+1\pmod{106},
+\]
+the two nonzero centered choices for the $43$ exponent give supports
+$A+29$ and $A+23$.  Their complements are $D+29$ and $D+23$.
+
+\begin{theorem}
+The two translated deficits are disjoint, and hence
+\[
+(A+29)\cup(A+23)=C_{53}.
+\]
+Under $\psi^{-1}$ and exponentiation by $2$, the two centered $43$-factor
+choices saturate the entire quadratic-nonresidue coset in
+$\mathbb F_{107}^{\times}$.
+\end{theorem}
+
+\begin{proof}
+An intersection would give $d_1+29=d_2+23$, so $6=d_2-d_1\in D-D$.  But
+\[
+42^{-1}=24\pmod{53},
+\qquad24\cdot6=144\equiv38\equiv-15\pmod{53}.
+\]
+The integer $-15$ is not in $[-9,9]$, so \eqref{eq:DD} implies
+$6\notin D-D$, a contradiction.  Taking complements proves the union
+identity.  Both subsequent coordinate maps are bijections.
+\end{proof}
+
+In the alternative Legendre-sheet coordinate $v\mapsto h(\lambda(-v))$, the
+same supports are $A+3$ and $A-3$.  The two affine presentations differ by a
+translation and have the same decisive gap $6$.
+
+\begin{corollary}
+The full centered exponent support
+\[
+B=\{70r+22s+59u+66t:
+-2\leq r,s\leq2,\ -1\leq u,t\leq1\}\subseteq C_{106}
+\]
+has $43$ even and $53$ odd classes.  Thus $|B|=96$ and
+\[
+C_{106}\setminus B=2D
+=\{2,20,24,42,46,60,64,82,86,104\}.
+\]
+The target exponent $53=\lambda(-1)$ has exactly the two coefficient fibres
+\[
+(-2,0,-1,-1),\qquad(2,0,1,1),
+\]
+whereas the exterior target exponent $60=\lambda(-p^{-1})$ has none.
+\end{corollary}
+
+\begin{proof}
+Only $59u$ controls parity.  The case $u=0$ gives the $43$-point even support;
+$u=\pm1$ gives the saturated $53$-point odd support.  The complement is the
+inverse half-log image $2D$.  Direct enumeration of the finite coefficient
+box gives the two stated fibres and the empty exterior fibre.
+\end{proof}
+
+\section{Reproducibility and nonclaims}
+
+The standard-library checker
+\begin{center}
+\texttt{certificates/verify\_r107\_deficit\_progression.py}
+\end{center}
+reconstructs the primitive-generator table, both support coordinates, $D$,
+$D-D$, both translate presentations, residue-level nonresidue saturation,
+the full missing set, and both target fibres.  Ordinary and optimized Python
+runs must have byte-identical output; the file contains no removable
+\texttt{assert} nodes.
+
+The Lean file
+\begin{center}
+\texttt{formal/lean/R107DeficitProgression.lean}
+\end{center}
+independently checks the finite-set equalities in $\operatorname{ZMod}(53)$
+and $\operatorname{ZMod}(106)$ and the factor logarithms in
+$\operatorname{ZMod}(107)$.  Formal acceptance and correspondence with this
+informal argument are separate review obligations.
+
+\begin{remark}
+Support saturation does not by itself retain representation multiplicities;
+the fibre enumeration is a separate calculation.  Nothing here proves a
+family of shells, a density theorem, or the Erd\H{o}s--Straus conjecture.
+The workbench makes no claim that the progression observation is new.
+\end{remark}
+
+\end{document}

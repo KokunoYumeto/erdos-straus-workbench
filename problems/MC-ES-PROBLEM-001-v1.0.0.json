@@ -1,0 +1,162 @@
+{
+  "record_type": "problem_record",
+  "schema_version": "0.1.0",
+  "record_version": "1.0.0",
+  "problem_id": "MC-ES-PROBLEM-001",
+  "previous_problem_ref": null,
+  "project_id": "MC-ERDOS-STRAUS",
+  "kind": "established_open_problem",
+  "title": "The Erdős–Straus conjecture",
+  "statement": {
+    "artifact_id": "MC-ES-ARTIFACT-STATEMENT-001",
+    "artifact_path": "problem/statement.md",
+    "artifact_version": "1.0.0",
+    "statement_label": "For every integer n at least 2, there exist positive integers x, y, z such that 4/n = 1/x + 1/y + 1/z.",
+    "media_type": "text/markdown",
+    "language": "en",
+    "byte_size": 891,
+    "hashes": [{"algorithm": "sha256", "digest": "c6ea6f8b4bef3dfd690be02cd2733a1da44e0bdf817810ad359061adb222b48e"}],
+    "exactness": "canonical_project_statement",
+    "change_policy": "new_record_version_required"
+  },
+  "current_status": {
+    "assessment": "not_assessed",
+    "qualified_label": "Historically and in the 2026 project archive described as open; a fresh independent current-status literature review has not yet been frozen in this workbench.",
+    "assessed_at": "2026-08-25T22:00:00Z",
+    "assessor_id": "MC-ES-STEWARD-001",
+    "assessment_method": "mixed_evidence_review",
+    "basis_source_ids": ["MC-ES-SOURCE-STATEMENT-001"],
+    "basis_summary": "The canonical Commons wording fixes the endpoint statement. No source-level independent current-status review is yet bound to this version, so the assessment remains not_assessed.",
+    "status_scope": "Only the exact universal positive-integer statement in problem/statement.md; no variant, density statement, or finite verification is promoted to endpoint status.",
+    "tracker_or_model_agreement_sufficient": false,
+    "independent_verification_status": "pending",
+    "caveats": [
+      "The workbench must add a source-level independent literature status audit before changing assessment to open.",
+      "No model agreement, project rhetoric, or repository label is treated as proof of status.",
+      "No result in this repository proves or disproves the endpoint statement."
+    ]
+  },
+  "source_refs": [
+    {
+      "source_record_id": "MC-ES-SOURCE-STATEMENT-001",
+      "record_version": "1.0.0",
+      "hashes": [{"algorithm": "sha256", "digest": "04332d5439914ec46f50fbc06ae81d5e9e0ab4e87c668a75d64ceb7640805f28"}],
+      "roles": ["statement_authority", "definition_basis", "rights_basis"],
+      "permitted_uses": ["inspect", "quote_lawful_excerpt", "extract_facts", "compute", "translate", "redistribute", "model_training"]
+    },
+    {
+      "source_record_id": "MC-ES-SOURCE-ZENODO-21845035",
+      "record_version": "1.0.0",
+      "hashes": [{"algorithm": "sha256", "digest": "caaf6e4ee4bc9948b2121ad4e0875e80c6ca1a7cf4b27e3584c1cf4f4ccc63f7"}],
+      "roles": ["status_basis", "provenance_basis", "historical_context"],
+      "permitted_uses": ["inspect", "extract_facts"],
+      "component_ids": ["MC-ES-COMPONENT-ZENODO-METADATA-001"]
+    },
+    {
+      "source_record_id": "MC-ES-SOURCE-REDDIT-R107-001",
+      "record_version": "1.0.0",
+      "hashes": [{"algorithm": "sha256", "digest": "08db6ade9afc82b7004bd64d5627d405ea73a8833d8d696853dd157beca1912d"}],
+      "roles": ["provenance_basis"],
+      "permitted_uses": ["inspect", "extract_facts"],
+      "component_ids": ["MC-ES-COMPONENT-REDDIT-R107-METADATA-001"]
+    }
+  ],
+  "provenance": [
+    {
+      "entry_id": "MC-ES-PROBLEM-PROV-001",
+      "kind": "statement_origin",
+      "description": "The workbench rewrote the familiar equation and conventions as a new canonical Commons statement rather than copying protected source wording.",
+      "originator_label": "Mathematics Commons contributors",
+      "attribution_status": "verified",
+      "publication_basis": "commons_submission",
+      "source_record_ids": ["MC-ES-SOURCE-STATEMENT-001"],
+      "recorded_at": "2026-08-25T22:00:00Z"
+    },
+    {
+      "entry_id": "MC-ES-PROBLEM-PROV-002",
+      "kind": "prior_attempt",
+      "description": "Zenodo record 21845035 identifies a versioned historical project corpus retained here only as a read-only baseline and audit source.",
+      "originator_label": "The Clankers; Zenodo",
+      "attribution_status": "verified",
+      "publication_basis": "metadata_only",
+      "source_record_ids": ["MC-ES-SOURCE-ZENODO-21845035"],
+      "recorded_at": "2026-08-25T22:00:00Z"
+    },
+    {
+      "entry_id": "MC-ES-PROBLEM-PROV-003",
+      "kind": "source_lead",
+      "description": "The first public packet responds to a credited mod-107 community lead; the underlying note is not republished and priority is not assessed.",
+      "originator_label": "Reddit user u/CommonCareful3149",
+      "attribution_status": "reported",
+      "publication_basis": "public_record",
+      "source_record_ids": ["MC-ES-SOURCE-REDDIT-R107-001"],
+      "recorded_at": "2026-08-25T22:00:00Z"
+    }
+  ],
+  "definitions_and_conventions": {
+    "statement_scope": "The endpoint variable n ranges over all integers n at least two; x, y, and z are positive integers. Bounded packets may study exact subfamilies without changing that endpoint.",
+    "definitions": [
+      {
+        "term": "solution for n",
+        "meaning": "A triple (x,y,z) of positive integers satisfying 4/n = 1/x + 1/y + 1/z exactly.",
+        "source_record_ids": ["MC-ES-SOURCE-STATEMENT-001"]
+      },
+      {
+        "term": "endpoint statement",
+        "meaning": "The universal existence assertion for every integer n at least two, distinguished from reductions, finite checks, density bounds, and analogies.",
+        "source_record_ids": ["MC-ES-SOURCE-STATEMENT-001"]
+      }
+    ],
+    "conventions": [
+      {
+        "label": "symmetric ordering",
+        "text": "Because the equation is symmetric, a certificate may report x≤y≤z; this normalization is not an additional existence hypothesis.",
+        "source_record_ids": ["MC-ES-SOURCE-STATEMENT-001"]
+      },
+      {
+        "label": "bounded-result discipline",
+        "text": "A theorem about one modulus, carrier, residue class, or finite search remains bounded to its stated hypotheses unless an explicit map and proof establish a broader implication.",
+        "source_record_ids": ["MC-ES-SOURCE-STATEMENT-001"]
+      }
+    ]
+  },
+  "created_at": "2026-08-25T22:00:00Z",
+  "updated_at": "2026-08-25T22:00:00Z",
+  "responsible_steward_id": "MC-ES-STEWARD-001",
+  "submission_boundary": {
+    "private_by_default": true,
+    "schema_fields_are_public_allowlist": true,
+    "allowlisted_artifact_ids": ["MC-ES-ARTIFACT-STATEMENT-001"],
+    "excluded_from_submission_by_default": {
+      "raw_transcript": true,
+      "prompt_history": true,
+      "chain_of_thought": true,
+      "private_notes": true,
+      "unpublished_communications": true,
+      "personal_context": true,
+      "credentials": true,
+      "unrelated_local_files": true
+    },
+    "raw_interaction_records_required": false,
+    "redaction_status": "passed",
+    "publication_preview_status": "approved",
+    "retention_rule": "approved_submission_only"
+  },
+  "submission_rights": {
+    "commons_originated_record": true,
+    "dedication": "CC0-1.0",
+    "dedication_scope": "intentionally_submitted_commons_components_only",
+    "submitted_component_ids": ["MC-ES-PROBLEM-001", "MC-ES-ARTIFACT-STATEMENT-001"],
+    "third_party_rights_preserved": true,
+    "third_party_source_ids": ["MC-ES-SOURCE-STATEMENT-001", "MC-ES-SOURCE-ZENODO-21845035", "MC-ES-SOURCE-REDDIT-R107-001"],
+    "redistribution_status": "permitted"
+  },
+  "limitations": {
+    "status": "known",
+    "items": [
+      "A fresh independent current-status literature assessment remains open.",
+      "The historical archive and community lead are provenance, not endpoint evidence.",
+      "No theorem or computation in the initial packet proves the universal statement."
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Please cite the exact release or commit and the named source/lead records used by your result."
+title: "Erdős–Straus Workbench"
+type: software
+authors:
+  - name: "Mathematics Commons contributors"
+repository-code: "https://github.com/KokunoYumeto/erdos-straus-workbench"
+url: "https://github.com/KokunoYumeto/erdos-straus-workbench"
+date-released: 2026-08-26
+license: CC0-1.0
+keywords:
+  - Erdős–Straus conjecture
+  - Egyptian fractions
+  - reproducible mathematics
+  - Lean
