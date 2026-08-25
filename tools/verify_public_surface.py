@@ -17,7 +17,7 @@ TEXT_SUFFIXES = {
     ".cff", ".json", ".lean", ".md", ".ndjson", ".py", ".tex",
     ".toml", ".txt", ".yml", ".yaml",
 }
-TEXT_NAMES = {".gitignore", "LICENSE", "lean-toolchain"}
+TEXT_NAMES = {".gitattributes", ".gitignore", "LICENSE", "lean-toolchain"}
 OPTIONAL_LIFECYCLE_FILES = {
     "packets/MC-ES-PACKET-R107-001-v1.1.0-ready.json",
     "transitions/MC-ES-TRANSITION-R107-001-v1.0.0.json",
@@ -28,6 +28,7 @@ REQUIRED_DRAFT_FILES = {
     ".github/ISSUE_TEMPLATE/result.yml",
     ".github/ISSUE_TEMPLATE/review.yml",
     ".github/workflows/validate.yml",
+    ".gitattributes",
     ".gitignore",
     "CITATION.cff",
     "COMMONS_BASELINE.json",
