@@ -6,7 +6,7 @@ The Erdős–Straus conjecture is represented here as the established open-probl
 
 Current bounded packet:
 
-- `MC-ES-PACKET-R107-001`: draft with producer replay complete; the next recorded transition promotes the immutable draft to `ready` for independent review.
+- `MC-ES-PACKET-R107-001`: `ready` for independent review, with the producer replay frozen in the preceding draft commit.
 - Producer checks: Python ordinary/optimized replay and Lean compilation pass locally.
 - Mathematical status: `CLAIMED_UNVERIFIED` in the Commons sense until an independent reviewer checks both the mathematics and the certificate-to-statement correspondence.
 - Priority status: not assessed. The arithmetic-progression formulation was not found in the routed local corpus, but that does not establish novelty.

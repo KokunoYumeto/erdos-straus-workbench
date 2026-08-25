@@ -1,0 +1,328 @@
+{
+  "record_type": "research_packet",
+  "schema_version": "0.1.0",
+  "record_version": "1.1.0",
+  "packet_id": "MC-ES-PACKET-R107-001",
+  "project_id": "MC-ERDOS-STRAUS",
+  "subject_ids": ["MC-ES-PROBLEM-001"],
+  "kind": "exact_computation",
+  "status": "ready",
+  "lease": {
+    "status": "unclaimed",
+    "generation": 0,
+    "claimant_id": null,
+    "claimed_at": null,
+    "expires_at": null,
+    "base_commit": null,
+    "branch_name": null
+  },
+  "created_at": "2026-08-25T22:10:00Z",
+  "updated_at": "2026-08-25T22:33:00Z",
+  "scope": {
+    "question": "For the exact p=8,803,369 and R=107 carrier, does the half-log deficit equal the ten-term progression {23+42j mod 53:0≤j≤9}, and does its difference set prove that the two odd-log translates saturate the quadratic-nonresidue sheet?",
+    "included_work": [
+      "Reconstruct the factorization of a=(p+107)/4 and the base-2 factor logarithms modulo 107.",
+      "Type the even half-log subgroup isomorphism and the affine coordinate on the odd exponent coset.",
+      "Enumerate the reduced support A and prove the exact progression description of its complement D.",
+      "Prove D-D={42k:-9≤k≤9}, its cardinality 19, and the exclusion of the translate gap 6.",
+      "Prove saturation of all 53 quadratic nonresidues by the two centered odd-factor translates.",
+      "Separately enumerate the two fibres at target log 53 and the empty fibre at target log 60.",
+      "Provide a readable TeX/PDF argument, a hardened standard-library Python replay, and a Lean finite certificate.",
+      "Credit u/CommonCareful3149 for the community lead without reproducing private correspondence or an unpublished note."
+    ],
+    "excluded_work": [
+      "Do not claim historical priority or global novelty.",
+      "Do not infer novelty from non-occurrence in the routed local corpus.",
+      "Do not claim a general residual-shell theorem, a density result, or a proof of the Erdős–Straus conjecture.",
+      "Do not treat support saturation as a representation-multiplicity theorem.",
+      "Do not reproduce raw transcripts, private messages, copyrighted literature files, or unlicensed archive payloads."
+    ],
+    "stop_conditions": [
+      "Every displayed finite set and target fibre has an exact deterministic replay.",
+      "The difference-set argument explicitly types both sheet coordinates and proves the translate obstruction.",
+      "The standalone PDF compiles without unresolved references, box overflow, or LaTeX errors and passes visual inspection.",
+      "The Lean file compiles under the pinned toolchain and reports no sorry or admit placeholders.",
+      "Independent mathematical, computational, formal-acceptance, statement-correspondence, attribution, and rights/privacy reviews are requested before acceptance."
+    ],
+    "continuation_cursor": "ready packet published; await independent review lanes and no self-acceptance"
+  },
+  "dependencies": [{
+    "record_type": "problem_record",
+    "record_id": "MC-ES-PROBLEM-001",
+    "record_version": "1.0.0",
+    "hashes": [{"algorithm": "sha256", "digest": "ef91d768053bc1ae4f507721f01ddad0c0fdb3fb3d7a664a58bcfbbf9ab9c128"}]
+  }],
+  "source_inputs": [
+    {
+      "source_record_id": "MC-ES-SOURCE-STATEMENT-001",
+      "record_version": "1.0.0",
+      "hashes": [{"algorithm": "sha256", "digest": "04332d5439914ec46f50fbc06ae81d5e9e0ab4e87c668a75d64ceb7640805f28"}],
+      "permitted_uses": ["inspect", "extract_facts", "compute"],
+      "component_ids": ["MC-ES-COMPONENT-STATEMENT-001"]
+    },
+    {
+      "source_record_id": "MC-ES-SOURCE-REDDIT-R107-001",
+      "record_version": "1.0.0",
+      "hashes": [{"algorithm": "sha256", "digest": "08db6ade9afc82b7004bd64d5627d405ea73a8833d8d696853dd157beca1912d"}],
+      "permitted_uses": ["inspect", "extract_facts"],
+      "component_ids": ["MC-ES-COMPONENT-REDDIT-R107-METADATA-001"]
+    },
+    {
+      "source_record_id": "MC-ES-SOURCE-ZENODO-21845035",
+      "record_version": "1.0.0",
+      "hashes": [{"algorithm": "sha256", "digest": "caaf6e4ee4bc9948b2121ad4e0875e80c6ca1a7cf4b27e3584c1cf4f4ccc63f7"}],
+      "permitted_uses": ["inspect", "extract_facts"],
+      "component_ids": ["MC-ES-COMPONENT-ZENODO-METADATA-001"]
+    }
+  ],
+  "outputs": [
+    {
+      "artifact_id": "MC-ES-ARTIFACT-R107-NOTE-TEX-001",
+      "kind": "mathematical_argument",
+      "description": "Standalone source for the exact coordinate maps, difference-set proof, consequences, and nonclaims.",
+      "media_type": "application/x-tex",
+      "required": true
+    },
+    {
+      "artifact_id": "MC-ES-ARTIFACT-R107-NOTE-PDF-001",
+      "kind": "exposition",
+      "description": "Rendered three-page public note built from the exact TeX source.",
+      "media_type": "application/pdf",
+      "required": true
+    },
+    {
+      "artifact_id": "MC-ES-ARTIFACT-R107-PYTHON-001",
+      "kind": "certificate",
+      "description": "Standard-library finite checker with explicit runtime guards, ordinary/-O output identity, and zero AST Assert nodes.",
+      "media_type": "text/x-python",
+      "required": true
+    },
+    {
+      "artifact_id": "MC-ES-ARTIFACT-R107-LEAN-001",
+      "kind": "formalization",
+      "description": "Pinned Lean finite certificates for the set equalities, saturation, logarithms, and target membership.",
+      "media_type": "text/plain",
+      "required": true
+    },
+    {
+      "artifact_id": "MC-ES-ARTIFACT-R107-MORPHISMS-001",
+      "kind": "correspondence_map",
+      "description": "Machine-readable domain/codomain, inverse, kernel, fibre, and information-loss records for the three coordinate maps.",
+      "media_type": "application/x-ndjson",
+      "required": true
+    }
+  ],
+  "acceptance_criteria": [
+    {
+      "criterion_id": "MC-ES-R107-CRIT-LOGS",
+      "description": "Independently verify that 2 has order 106 modulo 107 and that the factor logs are exactly (70,22,59,66).",
+      "verification_method": "exact_replay",
+      "required_evidence_kinds": ["certificate", "formalization"],
+      "mandatory": true
+    },
+    {
+      "criterion_id": "MC-ES-R107-CRIT-MAPS",
+      "description": "Verify the even half-log isomorphism, the odd-coset affine coordinate, their inverses and fibres, and the coordinate-independent translate gap.",
+      "verification_method": "manual_reconstruction",
+      "required_evidence_kinds": ["mathematical_argument", "correspondence_map"],
+      "mandatory": true
+    },
+    {
+      "criterion_id": "MC-ES-R107-CRIT-DEFICIT",
+      "description": "Verify the exact reduced support, its cardinality 43, and D={23+42j mod 53:0≤j≤9}.",
+      "verification_method": "exact_replay",
+      "required_evidence_kinds": ["mathematical_argument", "certificate", "formalization"],
+      "mandatory": true
+    },
+    {
+      "criterion_id": "MC-ES-R107-CRIT-DIFFSET",
+      "description": "Verify D-D={42k:-9≤k≤9}, its 19 distinct elements, and 6∉D-D.",
+      "verification_method": "manual_reconstruction",
+      "required_evidence_kinds": ["mathematical_argument", "certificate", "formalization"],
+      "mandatory": true
+    },
+    {
+      "criterion_id": "MC-ES-R107-CRIT-SATURATION",
+      "description": "Verify disjointness of translated deficits and equality of the represented odd residues with all quadratic nonresidues modulo 107.",
+      "verification_method": "adversarial_check",
+      "required_evidence_kinds": ["mathematical_argument", "certificate", "formalization"],
+      "mandatory": true
+    },
+    {
+      "criterion_id": "MC-ES-R107-CRIT-FIBRES",
+      "description": "Verify that target log 53 has exactly the two listed coefficient fibres and target log 60 has none.",
+      "verification_method": "exact_replay",
+      "required_evidence_kinds": ["certificate"],
+      "mandatory": true
+    },
+    {
+      "criterion_id": "MC-ES-R107-CRIT-PYTHON",
+      "description": "Verify successful ordinary and optimized Python runs, byte-identical output, and zero AST Assert nodes.",
+      "verification_method": "test_command",
+      "required_evidence_kinds": ["certificate"],
+      "mandatory": true
+    },
+    {
+      "criterion_id": "MC-ES-R107-CRIT-LEAN-ACCEPTANCE",
+      "description": "Compile the Lean project under its exact pin and audit reported axioms/placeholders; this does not establish statement correspondence.",
+      "verification_method": "formal_compile",
+      "required_evidence_kinds": ["formalization"],
+      "mandatory": true
+    },
+    {
+      "criterion_id": "MC-ES-R107-CRIT-LEAN-CORRESPONDENCE",
+      "description": "Independently compare every formal definition and theorem with the TeX objects, quantifiers, coordinates, and claims.",
+      "verification_method": "statement_correspondence",
+      "required_evidence_kinds": ["formalization", "mathematical_argument"],
+      "mandatory": true
+    },
+    {
+      "criterion_id": "MC-ES-R107-CRIT-SCOPE",
+      "description": "Verify explicit exclusion of priority, global novelty, general-shell, multiplicity-from-support, density, and endpoint claims.",
+      "verification_method": "adversarial_check",
+      "required_evidence_kinds": ["mathematical_argument", "metadata"],
+      "mandatory": true
+    },
+    {
+      "criterion_id": "MC-ES-R107-CRIT-RIGHTS-PRIVACY",
+      "description": "Verify that only the public locator and independent reconstruction are present, with no private correspondence, transcript material, credentials, or unlicensed bulk source.",
+      "verification_method": "rights_review",
+      "required_evidence_kinds": ["metadata"],
+      "mandatory": true
+    }
+  ],
+  "capability": {
+    "envelope": "standard",
+    "maximum_hours": 12,
+    "network_access": "restricted",
+    "code_execution": "isolated",
+    "required_tools": ["Python 3.11+", "Lean 4.32.0", "mathlib v4.32.0", "pdfLaTeX", "Poppler"],
+    "required_competencies": ["finite cyclic groups", "quadratic residues", "additive combinatorics", "deterministic computation", "Lean review"]
+  },
+  "execution_limits": {
+    "allowed_output_paths": [
+      "work/MC-ES-PACKET-R107-001/r107_deficit_progression.tex",
+      "work/MC-ES-PACKET-R107-001/r107_deficit_progression.pdf",
+      "work/MC-ES-PACKET-R107-001/R107_DEFICIT_PROGRESSION_REPLAY.json"
+    ],
+    "acceptance_commands": [
+      {
+        "command_id": "MC-ES-R107-CMD-PYTHON",
+        "command": ["python", "certificates/verify_r107_deficit_progression.py"],
+        "cwd": ".",
+        "dependency_paths": ["certificates/verify_r107_deficit_progression.py"],
+        "timeout_seconds": 60,
+        "criterion_ids": ["MC-ES-R107-CRIT-LOGS", "MC-ES-R107-CRIT-DEFICIT", "MC-ES-R107-CRIT-SATURATION", "MC-ES-R107-CRIT-FIBRES", "MC-ES-R107-CRIT-PYTHON"]
+      },
+      {
+        "command_id": "MC-ES-R107-CMD-PYTHON-OPTIMIZED",
+        "command": ["python", "-O", "certificates/verify_r107_deficit_progression.py"],
+        "cwd": ".",
+        "dependency_paths": ["certificates/verify_r107_deficit_progression.py"],
+        "timeout_seconds": 60,
+        "criterion_ids": ["MC-ES-R107-CRIT-PYTHON"]
+      },
+      {
+        "command_id": "MC-ES-R107-CMD-LEAN-BUILD",
+        "command": ["lake", "build"],
+        "cwd": "formal/lean",
+        "dependency_paths": ["formal/lean/R107DeficitProgression.lean", "formal/lean/R107DeficitProgression/Definitions.lean", "formal/lean/R107DeficitProgression/Reduced.lean", "formal/lean/R107DeficitProgression/Difference.lean", "formal/lean/R107DeficitProgression/FullSupport.lean", "formal/lean/lakefile.toml", "formal/lean/lean-toolchain", "formal/lean/lake-manifest.json"],
+        "timeout_seconds": 3600,
+        "criterion_ids": ["MC-ES-R107-CRIT-LEAN-ACCEPTANCE"]
+      },
+      {
+        "command_id": "MC-ES-R107-CMD-TEX",
+        "command": ["pdflatex", "-interaction=nonstopmode", "-halt-on-error", "r107_deficit_progression.tex"],
+        "cwd": "work/MC-ES-PACKET-R107-001",
+        "dependency_paths": ["work/MC-ES-PACKET-R107-001/r107_deficit_progression.tex"],
+        "timeout_seconds": 120,
+        "criterion_ids": ["MC-ES-R107-CRIT-SCOPE", "MC-ES-R107-CRIT-RIGHTS-PRIVACY"]
+      }
+    ],
+    "maximum_paid_spend": 0,
+    "maximum_cpu_seconds": 7200,
+    "maximum_ram_bytes": 8589934592,
+    "maximum_gpu_seconds": 0,
+    "maximum_storage_bytes": 2147483648,
+    "maximum_upload_bytes": 10485760
+  },
+  "risk": {
+    "mathematical": "moderate",
+    "security": "low",
+    "privacy": "moderate",
+    "rights": "moderate",
+    "ethical": "low",
+    "publicity": "moderate"
+  },
+  "review_plan": {
+    "required_review_types": ["mathematical_reconstruction", "computational_reproduction", "formal_acceptance", "statement_correspondence", "attribution", "rights_privacy"],
+    "minimum_reviewers": 2,
+    "independent_reviewer_required": true,
+    "producer_may_accept_own_work": false,
+    "version_bound_review_required": true
+  },
+  "formalization_plan": {
+    "expectation": "partial",
+    "formal_acceptance_review": "required",
+    "statement_correspondence_review": "required",
+    "separate_reviews_required": true
+  },
+  "submission_boundary": {
+    "private_by_default": true,
+    "schema_fields_are_public_allowlist": true,
+    "allowlisted_artifact_ids": [
+      "MC-ES-ARTIFACT-R107-NOTE-TEX-001",
+      "MC-ES-ARTIFACT-R107-NOTE-PDF-001",
+      "MC-ES-ARTIFACT-R107-PYTHON-001",
+      "MC-ES-ARTIFACT-R107-LEAN-001",
+      "MC-ES-ARTIFACT-R107-MORPHISMS-001"
+    ],
+    "excluded_from_submission_by_default": {
+      "raw_transcript": true,
+      "prompt_history": true,
+      "chain_of_thought": true,
+      "private_notes": true,
+      "unpublished_communications": true,
+      "personal_context": true,
+      "credentials": true,
+      "unrelated_local_files": true
+    },
+    "raw_interaction_records_required": false,
+    "redaction_status": "passed",
+    "publication_preview_status": "approved",
+    "retention_rule": "approved_submission_only"
+  },
+  "submission_rights": {
+    "commons_originated_record": true,
+    "dedication": "CC0-1.0",
+    "dedication_scope": "intentionally_submitted_commons_components_only",
+    "submitted_component_ids": [
+      "MC-ES-PACKET-R107-001",
+      "MC-ES-ARTIFACT-R107-NOTE-TEX-001",
+      "MC-ES-ARTIFACT-R107-NOTE-PDF-001",
+      "MC-ES-ARTIFACT-R107-PYTHON-001",
+      "MC-ES-ARTIFACT-R107-LEAN-001",
+      "MC-ES-ARTIFACT-R107-MORPHISMS-001"
+    ],
+    "third_party_rights_preserved": true,
+    "third_party_source_ids": ["MC-ES-SOURCE-STATEMENT-001", "MC-ES-SOURCE-REDDIT-R107-001", "MC-ES-SOURCE-ZENODO-21845035"],
+    "redistribution_status": "permitted"
+  },
+  "responsible_steward_id": "MC-ES-STEWARD-001",
+  "credit_roles": [
+    {"contributor_id": "u.CommonCareful3149", "role": "source_lead"},
+    {"contributor_id": "MC-ES-STEWARD-001", "role": "packet_design"},
+    {"contributor_id": "MC-ES-STEWARD-001", "role": "stewardship"},
+    {"contributor_id": "MC-ES-STEWARD-001", "role": "review_planning"}
+  ],
+  "limitations": {
+    "status": "known",
+    "items": [
+      "The detailed community note is not public and is not evaluated as a source artifact.",
+      "The checked-in calculation is producer evidence and remains CLAIMED_UNVERIFIED until independent review.",
+      "The Lean certificate covers finite equalities but does not formalize every conceptual map or prose nonclaim.",
+      "No literature-wide novelty or priority survey has been completed.",
+      "The packet has no endpoint implication beyond the one exact R=107 carrier."
+    ]
+  }
+}

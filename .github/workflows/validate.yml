@@ -39,6 +39,7 @@ jobs:
           auto-config: false
           build: true
           use-mathlib-cache: true
+          use-github-cache: false
           lake-package-directory: formal/lean
           leanchecker: true
       - name: Direct module replay and exact axiom audit

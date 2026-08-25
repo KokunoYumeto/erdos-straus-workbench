@@ -1,0 +1,74 @@
+{
+  "record_type": "packet_transition",
+  "schema_version": "0.1.0",
+  "record_version": "1.0.0",
+  "transition_id": "MC-ES-TRANSITION-R107-001",
+  "event_model": "append_only",
+  "event_kind": "state_transition",
+  "from_packet_ref": {
+    "packet_id": "MC-ES-PACKET-R107-001",
+    "record_version": "1.0.0",
+    "hashes": [
+      {
+        "algorithm": "sha256",
+        "digest": "8bca93ec844b27ff1f49b1b2b58fa8dd800021ece6b852f9d02dc1d6767a7a04"
+      }
+    ]
+  },
+  "to_packet_ref": {
+    "packet_id": "MC-ES-PACKET-R107-001",
+    "record_version": "1.1.0",
+    "hashes": [
+      {
+        "algorithm": "sha256",
+        "digest": "7d2f5362a0139f7bcfdbc529940da957612e6c841fb18c7383fe3a86097f6c85"
+      }
+    ]
+  },
+  "sequence": 1,
+  "from_status": "draft",
+  "to_status": "ready",
+  "actor_id": "MC-ES-STEWARD-001",
+  "occurred_at": "2026-08-25T22:33:00Z",
+  "git_commit": "fb17051f153389c162c2d93e611ee389040dc9ce",
+  "reason": "The exact bounded R=107 statement, source boundary, producer replays, formal certificate, review lanes, and nonclaims are frozen; this advances only the packet workflow and confers no independent acceptance.",
+  "next_owner_id": "MC-ES-STEWARD-001",
+  "submission_boundary": {
+    "private_by_default": true,
+    "schema_fields_are_public_allowlist": true,
+    "allowlisted_artifact_ids": [],
+    "excluded_from_submission_by_default": {
+      "raw_transcript": true,
+      "prompt_history": true,
+      "chain_of_thought": true,
+      "private_notes": true,
+      "unpublished_communications": true,
+      "personal_context": true,
+      "credentials": true,
+      "unrelated_local_files": true
+    },
+    "raw_interaction_records_required": false,
+    "redaction_status": "passed",
+    "publication_preview_status": "approved",
+    "retention_rule": "approved_submission_only"
+  },
+  "submission_rights": {
+    "commons_originated_record": true,
+    "dedication": "CC0-1.0",
+    "dedication_scope": "intentionally_submitted_commons_components_only",
+    "submitted_component_ids": [
+      "MC-ES-TRANSITION-R107-001"
+    ],
+    "third_party_rights_preserved": true,
+    "third_party_source_ids": [],
+    "redistribution_status": "permitted"
+  },
+  "limitations": {
+    "status": "known",
+    "items": [
+      "Ready status requests independent review; it does not verify the calculation or establish acceptance.",
+      "The producer may not accept its own packet.",
+      "No historical priority, global novelty, general shell theorem, density result, or Erdős–Straus endpoint is claimed."
+    ]
+  }
+}
