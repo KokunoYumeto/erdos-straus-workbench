@@ -66,6 +66,7 @@ REQUIRED_DRAFT_FILES = {
     "sources/reddit-r107-public-lead-metadata.md",
     "sources/zenodo-21845035-metadata.md",
     "tools/validate_packets.py",
+    "tools/verify_lean_environment.py",
     "tools/verify_lean_audit.py",
     "tools/verify_public_surface.py",
     "work/MC-ES-PACKET-R107-001/R107_DEFICIT_PROGRESSION_REPLAY.json",

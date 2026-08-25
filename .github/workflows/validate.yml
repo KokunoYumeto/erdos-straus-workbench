@@ -41,8 +41,8 @@ jobs:
           use-mathlib-cache: true
           use-github-cache: false
           lake-package-directory: formal/lean
-      - name: Independent environment check for the actual library
-        run: lake env leanchecker R107DeficitProgression
+      - name: Independent environment check by proof module
+        run: python ../../tools/verify_lean_environment.py
       - name: Direct module replay and exact axiom audit
         run: python ../../tools/verify_lean_audit.py
 
